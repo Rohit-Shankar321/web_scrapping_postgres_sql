@@ -93,24 +93,13 @@ print('SuccessfullyCreated')
 
 
 import psycopg2 
+#create sqlalchemy engine
 
 engine = sqlalchemy.create_engine('postgresql://postgres:rohit81023@localhost:5432/Ecommerce_Flipkart')
 #postgresql://username:password@host:port/database_name
 df.to_sql('Flipkart',engine, index = False)
 
 
-# In[ ]:
-
-
-#create sqlalchemy engine
-import psycopg2
-
-engine = sqlalchemy.create_engine('postgresql://postgres:12345@localhost:5432/Justia')
-#postgresql://username:password@host:port/database_name
-df_lawyers_multiple.to_sql('lawyers',engine, index = False)
-
-
-# In[ ]:
 
 
 
